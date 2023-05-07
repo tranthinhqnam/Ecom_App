@@ -1,0 +1,96 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".LoginActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal"
+        android:layout_marginVertical="30dp"
+        android:orientation="vertical"
+        android:paddingHorizontal="20dp">
+
+        <ImageView
+            android:layout_width="200dp"
+            android:layout_height="200dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="25dp"
+            android:background="@drawable/login" />
+
+        <TextView
+            android:id="@+id/loginText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/sf_pro_rounded_semibold"
+            android:text="Login now"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textSize="35dp" />
+
+        <EditText
+            android:id="@+id/email"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginTop="25dp"
+            android:layout_marginBottom="7dp"
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/baseline_person_24"
+            android:drawablePadding="20dp"
+            android:drawableTint="@color/light_black"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:hint="Email"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background" />
+
+        <EditText
+            android:id="@+id/password"
+            android:layout_width="match_parent"
+            android:layout_height="62dp"
+            android:layout_marginTop="20dp"
+            android:background="@drawable/custom_input"
+            android:drawableLeft="@drawable/baseline_lock_24"
+            android:drawablePadding="20dp"
+            android:drawableTint="@color/light_black"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:hint="Password"
+            android:inputType="textPassword"
+            android:paddingHorizontal="20dp"
+            android:textColor="@color/black"
+            android:textColorHighlight="@color/cardview_dark_background" />
+
+        <Button
+            android:id="@+id/loginButton"
+            android:layout_width="match_parent"
+            android:layout_height="68dp"
+            android:layout_gravity="center"
+            android:layout_marginHorizontal="28dp"
+            android:layout_marginTop="42dp"
+            android:backgroundTint="@color/primary_color"
+            android:fontFamily="@font/sf_pro_rounded_regular"
+            android:text="Login"
+            android:textAllCaps="false"
+            android:textSize="20dp"
+            app:cornerRadius="20dp" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/signinText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="20dp"
+        android:fontFamily="@font/sf_pro_rounded_medium"
+        android:padding="8dp"
+        android:text="Not yet registered? Sign up now"
+        android:textAlignment="center"
+        android:textColor="#6A6A6A"
+        android:textSize="16dp" />
+
+</LinearLayout>
